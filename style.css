@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+:root {
+  --primaryColor: #54627b;
+  --secondaryColor: #a2beef;
+  --terciaryColor: #fbb2a3;
+  --white: #f0f0f0;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@media (max-width: 769px) {
+  html {
+    font-size: 34%;
+  }
+  #navbar {
+    justify-content: center;
+  }
+  #navbar ul {
+    width: 100vw;
+  }
+  #navbar ul a {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #54627b;
+}
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 5.5rem;
+  color: var(--white);
+  padding: 3rem;
+}
+p {
+  font-size: 5rem;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: var(--secondaryColor);
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+#navbar ul {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#navbar ul a {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--white);
+}
+main {
+  margin-top: 7rem;
+  background-color: var(--primaryColor);
+}
+#welcomeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 7rem;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(#fbb2a3, 1%, 1%);
+}
+#welcomeContainer h1 {
+  color: var(--white);
+}
+#welcomeContainer p {
+  color: var(--terciaryColor);
+  text-align: center;
+}
+#projectsContainer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--terciaryColor);
+  padding: 12rem 2rem;
+}
+#projectSection {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(39.9rem, 1fr));
+  grid-auto-rows: 55rem;
+}
+.projectsBox {
+  margin: 6rem 2rem;
+  box-shadow: 1px 1px 10px 0.5px rgba(0, 0, 0, 0.8);
+  background-color: var(--primaryColor);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.projectsBox:hover,
+#showAllButton:hover {
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.9);
+  background-color: hsl(218, 19%, 52%);
+  transition: 1s box-shadow, 1s background-color, 1s transform;
+  transform: scale(102%);
+}
+.projectImage {
+  height: 37rem;
+  width: 100%;
+  display: block;
+  border-radius: 0.3rem;
+}
+.projectName {
+  height: 6rem;
+  font-size: 2.5rem;
+  line-height: 6rem;
+  color: var(--white);
+  font-weight: 400;
+}
+#showAllButton {
+  font-size: 2rem;
+  padding: 1.4rem 3.5rem;
+  background-color: var(--primaryColor);
+  border-radius: 0.3rem;
+  color: var(--white);
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+}
+#showAllButton:hover {
+  color: var(--terciaryColor);
+}
+#contactContainer {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  padding: 3rem 2rem 6rem 2rem;
+}
+#socialMediaBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.socialMediaIcon {
+  margin: 0 1.5rem 0 9rem;
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+#socialMediaBox li:first-child {
+  margin-left: -9rem;
+}
+#socialMediaBox span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+footer {
+  border-top: solid var(--secondaryColor) 2px;
+  height: 20vh;
+  text-align: center;
+  line-height: 20vh;
+  color: var(--white);
+  font-size: 1.3rem;
+  font-style: italic;
+}
